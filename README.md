@@ -18,7 +18,7 @@ Please note that this is a demo app only. For simplicity reasons, I utilized Apa
 
 ## To Do
 
-Given the restricted timeline requirements of this project, I didn't have time to accomplish all that I would have liked. The project, as a whole, meets and exceeds all of the requirements listed in the challenge below. Additional time, however, would mean adding JavaDoc-style comments to all of the files. It also would have meant more extensive testing to ensure the application is as stable and secure as possible. Because I was completely new to Spring Boot, it would have meant more time researching best practices for structure, performance and security. Essentially, more time generall means a more highly-polished application that meets the high standards I've come to expect, both from a developer and user perspective. 
+Given the restricted timeline requirements of this project, I didn't have time to accomplish all that I would have liked. The project, as a whole, meets and exceeds all of the requirements listed in the challenge below. Additional time, however, would mean adding JavaDoc-style comments to all of the files. It also would have meant more extensive testing to ensure the application is as stable and secure as possible. Because I was completely new to Spring Boot, it would have meant more time researching best practices for structure, performance and security. Essentially, more time generally means a more highly-polished application that meets the high standards I've come to expect, both from a developer and user perspective. 
 
 ## History
 
