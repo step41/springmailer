@@ -1,5 +1,7 @@
 package org.step41.projects.springmailer.entities;
 
+import org.springframework.format.annotation.DateTimeFormat;
+
 import javax.persistence.*;
 import java.util.Date;
 
@@ -17,6 +19,7 @@ public class Message {
     @Lob
     @Column( length = 100000 )
     private String body;
+    @DateTimeFormat(iso = DateTimeFormat.ISO.DATE_TIME)
     private Date created = new Date();
 
     public Message() {}

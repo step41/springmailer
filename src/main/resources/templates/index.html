@@ -45,7 +45,7 @@
                         </form-group>
                         <div class=" col-lg-4 col-md-4 col-sm-4 col-xs-12"></div>
                         <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
-                            <button v-on:click="saveSender('right')" @click="$v.from.$touch()" type="button" class="btn btn-primary btn-action">Save and Continue<span class="glyphicon glyphicon-menu-right"></span></button>
+                            <button v-on:click="saveSender('right')" @click="$v.from.$touch()" type="button" class="btn btn-primary btn-action btn-right">Save and Continue<span class="glyphicon glyphicon-menu-right"></span></button>
                         </div>
                     </div>
                 </form>
@@ -57,10 +57,10 @@
                 <form class="form form-horizontal form-springmailer" accept-charset="UTF-8">
                     <div class="col-lg-3 col-md-3 col-sm-2 col-xs-2"></div>
                     <div class="col-lg-6 col-md-6 col-sm-8 col-xs-8">
-                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12"></div>
-                        <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
+                        <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12"></div>
+                        <div class="col-lg-9 col-md-9 col-sm-8 col-xs-12">
                             <div class="input-group">
-                                <div class="btn-group" role="group" aria-label="navigation">
+                                <div class="btn-group btn-group-right" role="group" aria-label="navigation">
                                     <button v-on:click="newSender('left')" type="button" class="btn btn-primary btn-action springmailer-icon-left"><span class="glyphicon glyphicon-menu-left"></span>New Sender</button>
                                     <button v-on:click="viewMessages('right')" type="button" class="btn btn-primary btn-action springmailer-icon-right">View Messages<span class="glyphicon glyphicon-menu-right"></span></button>
                                 </div>
@@ -92,7 +92,7 @@
                         </form-group>
                         <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12"></div>
                         <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
-                            <button v-on:click="sendMessage('right')" @click="$v.to.$touch()" type="button" class="btn btn-primary btn-action">Send Message</button>
+                            <button v-on:click="sendMessage('right')" @click="$v.to.$touch()" type="button" class="btn btn-primary btn-action btn-right">Send Message</button>
                         </div>
                     </div>
                 </form>
@@ -119,7 +119,7 @@
                                 <th class="table-cell-sender">From</th>
                                 <th class="table-cell-recipient">To</th>
                                 <th class="table-cell-subject">Subject</th>
-                                <th class="table-cell-date">Date</th>
+                                <th class="table-cell-date">Created</th>
                                 <th class="table-cell-view">View</th>
                             </tr>
                             </thead>
@@ -128,7 +128,7 @@
                                 <td class="table-cell-sender">{{ message.fromName }} <{{ message.fromEmail }}></td>
                                 <td class="table-cell-recipient">{{ message.toName }} <{{ message.toEmail }}></td>
                                 <td class="table-cell-subject">{{ message.subject }}</td>
-                                <td class="table-cell-date">{{ message.date }}</td>
+                                <td class="table-cell-date">{{ SpringMailer.Utilities.formatDate(message.created) }}</td>
                                 <td class="table-cell-view">
                                     <button @click="toggleMessage(message.id)" type="button" class="btn btn-primary btn-toggle-message" title="Toggle Message Content"><span class="glyphicon glyphicon-menu-hamburger"></span></button></td>
                             </tr>
@@ -149,6 +149,7 @@
     <script src="/js/jquery-ui/1.12.1/jquery-ui.min.js"></script>
     <script src="/webjars/vue/2.5.3/vue.min.js"></script>
     <script src="/webjars/axios/0.17.0/dist/axios.min.js"></script>
+    <script src="/webjars/momentjs/2.19.3/moment.js"></script>
     <script src="/js/SpringMailer.js"></script>
 
 </body>

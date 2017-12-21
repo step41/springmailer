@@ -2,6 +2,11 @@ SpringMailer.Utilities = {
 
     // Reserved for any global functions required to ensure they're still namespaced
 
+    formatDate: function(t) {
+        console.log(t);
+        return moment.unix(t/1000).fromNow();
+    },
+
     getToken: function(v) {
         var token, name, email;
         var c = SpringMailer.Constants;

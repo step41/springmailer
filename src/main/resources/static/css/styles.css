@@ -91,13 +91,13 @@ body {
     border: 1px #030 solid;
 }
 .form-springmailer .btn-action {
-    float: right;
     min-width: 150px;
-    margin-right: -15px;
 }
-.form-springmailer .btn-group .btn-action {
-    float: none;
-    width: inherit;
+.form-springmailer .btn-group-right,
+.form-springmailer .btn-right
+{
+    float: right;
+    margin-right: -15px;
 }
 .form-springmailer .btn-action .glyphicon {
     font-size: 80%;
@@ -162,6 +162,9 @@ body {
     text-align: center;
     width: 100%;
 }
+
+/* ========= Mobile First ========== */
+
 /* Custom, iPhone Retina */
 @media only screen and (min-width : 320px) {
 
@@ -187,7 +190,7 @@ body {
 
 }
 
-/* ========= Desktop Devices ========== */
+/* ========= Desktop First ========== */
 
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px) {

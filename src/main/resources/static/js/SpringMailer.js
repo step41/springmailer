@@ -15,7 +15,7 @@ SpringMailer.init = function() {
         'SpringMailer.Configs.js',
         'SpringMailer.Utilities.js',
         'SpringMailer.Plugins.Vuelidate.js',
-        'SpringMailer.Controllers.Accounts.js',
+        'SpringMailer.Controllers.Roles.js',
         'SpringMailer.Controllers.Messages.js',
         'SpringMailer.Application.js'
     ];

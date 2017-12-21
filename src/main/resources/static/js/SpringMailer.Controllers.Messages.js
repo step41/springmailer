@@ -77,7 +77,7 @@ SpringMailer.Controllers.Messages = {
                     data: data
                 }).then(
                     function(response) {
-                        console.log(response.data);
+                        //console.log(response.data);
                         SpringMailer.Application.list.messages = response.data;
                         SpringMailer.Application.viewMessages(dir);
                     }
@@ -90,10 +90,10 @@ SpringMailer.Controllers.Messages = {
     toggleMessage(id) {
         var tr = $("#message-" + id);
         if ($(tr).is(":visible")) {
-            $(tr).animate({ height: "show", opacity: 1 });
+            $(tr).animate({ height: "hide", opacity: 0 });
         }
         else {
-            $(tr).animate({ height: "hide", opacity: 0 });
+            $(tr).animate({ height: "show", opacity: 1 });
         }
     },
 
