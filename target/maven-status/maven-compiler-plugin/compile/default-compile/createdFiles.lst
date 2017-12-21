@@ -1,0 +1,4 @@
+org/step41/projects/springmailer/models/Message.class
+org/step41/projects/springmailer/controllers/MessagesController.class
+org/step41/projects/springmailer/services/MessagesService.class
+org/step41/projects/springmailer/Main.class

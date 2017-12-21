@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: com.amazonaws:aws-java-sdk-machinelearning:1.11.250">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/amazonaws/aws-java-sdk-machinelearning/1.11.250/aws-java-sdk-machinelearning-1.11.250.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/com/amazonaws/aws-java-sdk-machinelearning/1.11.250/aws-java-sdk-machinelearning-1.11.250-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/amazonaws/aws-java-sdk-machinelearning/1.11.250/aws-java-sdk-machinelearning-1.11.250-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

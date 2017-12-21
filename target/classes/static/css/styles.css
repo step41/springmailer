@@ -1,0 +1,319 @@
+@import url("https://fonts.googleapis.com/css?family=Noticia Text:300,400,600,700&amp;lang=en");
+@import url("https://fonts.googleapis.com/css?family=Lobster:300,400,600,700&amp;lang=en");
+
+html {
+    min-height: 101%;
+    overflow: -moz-scrollbars-vertical;
+    overflow-y: scroll;
+}
+:-moz-placeholder,
+::-moz-placeholder,
+:-ms-input-placeholder,
+::-webkit-input-placeholder,
+.text-muted,
+.help-block,
+.help-block a
+{
+    color: #bcb !important;
+    font-style: italic !important;
+    text-decoration: none;
+}
+body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color: #030;
+    font-family: 'Noticia Text', 'freight-text-pro', Georgia, Cambria, 'Times New Roman' ,Times, serif;
+    font-size: 2em;
+    min-height: 101%;
+    padding-bottom: 50px;
+}
+.page-title {
+    color: #c00;
+    font-family: 'Lobster', Georgia, Cambria, 'Times New Roman' ,Times, serif;
+    padding: 20px 0;
+    text-align: center;
+    word-break: break-all;
+    word-wrap: break-word;
+}
+.page-title .page-title-text {
+    background: -webkit-linear-gradient(#c00, #070);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.page-title .glyphicon:first-child,
+.page-title .glyphicon:last-child
+{
+    color: #050;
+}
+.page-title .glyphicon:first-child {
+    margin-right: 10px;
+    transform: rotate(-35deg);
+}
+.page-title .glyphicon:last-child {
+    margin-left: 10px;
+    transform: rotate(35deg);
+}
+.page-intro p {
+    padding: 20px;
+    text-align: justify;
+}
+.form-springmailer input[type="text"],
+.form-springmailer input[type="email"],
+.form-springmailer textarea
+{
+    background: #efe;
+    color: #030;
+    font-family: sans-serif;
+    font-size: 70%;
+}
+.form-springmailer textarea {
+    min-height: 200px;
+}
+.form-springmailer .form-control,
+.form-springmailer .form-control:focus
+{
+  border-color: #050;
+}
+.form-springmailer .form-control:focus {
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(0, 119, 0, 0.6);
+}
+.form-springmailer label,
+.form-springmailer .has-error label
+{
+    color: #050;
+    white-space: nowrap;
+}
+.form-springmailer .btn,
+.form-springmailer .btn:active,
+.form-springmailer .btn:focus
+{
+    background-color: #050;
+    border: 1px #030 solid;
+}
+.form-springmailer .btn-action {
+    float: right;
+    min-width: 150px;
+    margin-right: -15px;
+}
+.form-springmailer .btn-group .btn-action {
+    float: none;
+    width: inherit;
+}
+.form-springmailer .btn-action .glyphicon {
+    font-size: 80%;
+}
+.form-springmailer .springmailer-icon-right .glyphicon {
+    margin-left: 5px;
+}
+.form-springmailer .springmailer-icon-left .glyphicon {
+    margin-right: 5px;
+}
+.form-springmailer .input-group {
+    float: right;
+    margin-bottom: 30px;
+}
+.form-springmailer .table > thead > tr > th {
+    border-bottom: 1px #9a9 solid;
+}
+.validation-alert {
+    border-radius: 3px;
+    display: inline-block;
+    font-family: sans-serif;
+    font-size: 65%;
+    padding: 3px 15px;
+    margin: 5px 0 5px 15px;
+    text-align: center;
+    width: calc(100% - 30px)
+}
+.table th,
+.table td
+{
+    font-family: sans-serif;
+    font-size: 70%;
+}
+.table {
+    border-collapse: separate;
+}
+.table tr:nth-child(odd) td {
+    background-color: #efe;
+}
+.table tr:nth-child(even) td {
+    background-color: #fff;
+}
+.table .table-cell-body {
+    display: none;
+}
+.table tr .btn-primary {
+    padding: 2px 6px 0px 6px;
+}
+.springmailer-panel-2,
+.springmailer-panel-3
+{
+    display: none;
+}
+.springmailer-copyright {
+    bottom: 0;
+    color: #bcb;
+    font-family: sans-serif;
+    font-size: 70%;
+    left: 0;
+    padding: 10px;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+}
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px) {
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+
+}
+
+/* ========= Desktop Devices ========== */
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+    body {
+        font-size: 1.8em;
+    }
+    .form-springmailer input[type="text"],
+    .form-springmailer input[type="email"],
+    .form-springmailer textarea
+    {
+        font-size: 80%;
+    }
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+    body {
+        font-size: 1.7em;
+    }
+    .form-springmailer input[type="text"],
+    .form-springmailer input[type="email"],
+    .form-springmailer textarea
+    {
+        font-size: 90%;
+    }
+    .table-cell-subject {
+        display: none;
+    }
+    .table th,
+    .table td
+    {
+        font-size: 80%;
+    }
+    .validation-alert {
+        font-size: 75%;
+    }
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+    body {
+        font-size: 1.6em;
+    }
+    .page-intro p {
+        padding: 20px 10px;
+    }
+    .form-springmailer input[type="text"],
+    .form-springmailer input[type="email"],
+    .form-springmailer textarea
+    {
+        font-size: 90%;
+    }
+    .table-cell-subject {
+        display: none;
+    }
+    .table th,
+    .table td
+    {
+        font-size: 80%;
+    }
+    .validation-alert {
+        font-size: 85%;
+    }
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+    body {
+        font-size: 1.5em;
+    }
+    .page-title {
+        font-size: 175%;
+    }
+    .page-intro p {
+        padding: 20px 10px;
+    }
+    .form-springmailer input[type="text"],
+    .form-springmailer input[type="email"],
+    .form-springmailer textarea
+    {
+        font-size: 100%;
+    }
+    .table-cell-recipient,
+    .table-cell-subject
+    {
+        display: none;
+    }
+    .table th,
+    .table td
+    {
+        font-size: 90%;
+    }
+    .validation-alert {
+        font-size: 85%;
+    }
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px) {
+    body {
+        font-size: 1.4em;
+    }
+    .page-title {
+        font-size: 150%;
+    }
+    .page-intro p {
+        padding: 20px 10px;
+    }
+    .form-springmailer input[type="text"],
+    .form-springmailer input[type="email"],
+    .form-springmailer textarea
+    {
+        font-size: 100%;
+    }
+    .table-cell-recipient,
+    .table-cell-subject
+    {
+        display: none;
+    }
+    .table th,
+    .table td
+    {
+        font-size: 90%;
+    }
+    .validation-alert {
+        font-size: 85%;
+    }
+}
