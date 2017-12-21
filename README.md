@@ -1,6 +1,3 @@
-<snippet>
-  <content><![CDATA[
-
 # Step41's SpringMailer
 
 ## Summary
@@ -79,5 +76,3 @@ Jeff Todnem @ Step41, LLC
 ## License
 
 GNU GENERAL PUBLIC LICENSE
-]]></content>
-</snippet>
