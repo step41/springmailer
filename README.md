@@ -1,6 +1,6 @@
 <snippet>
   <content><![CDATA[
-# ${1:Project Name}
+# Step41's SpringMailer
 
 A small demo app built using Spring Boot and Vue. Fully encapsulated micro-service API with front-end app for mailing holiday greetings to a recipient of your choice. 
 
@@ -16,13 +16,13 @@ Before booting the service, make sure you add your SendGrid API key to the "send
 
 Please note that this is a demo app only. For simplicity reasons, I utilized Apache's Tomcat servlet and Derby database for data storage. This means any data stored is non-persistent, and will be lost as soon as the service is shut down. Optionally, you can select a different database, however, since the code was only tested with Derby, additional code modifications may be required to retain the original functionality.
 
-## TODO
+## To Do
 
 Given the restricted timeline requirements of this project, I didn't have time to accomplish all that I would have liked. The project, as a whole, meets and exceeds all of the requirements listed in the challenge below. Additional time, however, means adding PHPDocs to all of the files. It means more extensive testing to ensure the application is as stable and secure as possible. Because I was completely new to Spring Boot, it means more time researching best practices for structure, performance and security. Essentially, more time ensures the application is up to the high standards I expect, both from a developer and user perspective. 
 
 ## History
 
-For those interested in the origin of how this application came to be... this app was actually written in response to a project challenge presented by [Darius Houle](https://gist.github.com/dariushoule/). Please keep in mind that I had very little experience with Java programming, and zero experience with Spring Boot or Vue.js specifically, prior to taking on this challenge. Needless to say, I had a lot to accomplish in a very short period of time. But I did exactly that, and had a lot of fun doing it! 
+For those interested in the origin of how this application came to be... this app was actually written in response to a project challenge presented by [Darius Houle](https://github.com/dariushoule/). Please keep in mind that I had very little experience with Java programming, and zero experience with Spring Boot or Vue.js specifically, prior to taking on this challenge. Needless to say, I had a lot to accomplish in a very short period of time. But I did exactly that, and had a lot of fun doing it! 
 
 From the perspective of a developer who's been doing this for many years now, I have to say that this challenge was very well put together. On the surface, it may seem like a simple app, but look more closely and you'll see it covers a broad spectrum of design challenges that programmers will typically encounter in their projects these days. And considering I knew little to nothing of the required software packages beforehand, this challenge gave me an opportunity to learn a lot about Java, Spring Boot and Vue, in a very short period of time.
 
@@ -77,5 +77,4 @@ Jeff Todnem @ Step41, LLC
 
 GNU GENERAL PUBLIC LICENSE
 ]]></content>
-  <tabTrigger>readme</tabTrigger>
 </snippet>
