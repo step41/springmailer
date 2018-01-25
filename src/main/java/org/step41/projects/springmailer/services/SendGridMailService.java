@@ -10,7 +10,7 @@ import static org.step41.projects.springmailer.config.Constants.Strings.MSG_MAIL
 import static org.step41.projects.springmailer.config.Constants.Strings.MSG_MAIL_SEND_PASS;
 
 @Service
-public class SendGridMailService {
+public class SendGridMailService implements MailServiceInterface {
 
     private Boolean sent;
     @Value("${sendgrid.mail.api.secret}")
@@ -46,7 +46,6 @@ public class SendGridMailService {
         } catch (IOException ex) {
             System.out.println(MSG_MAIL_SEND_FAIL + "SendGrid. Error: " + ex);
             sent = false;
-            throw ex;
         }
         finally {
             return sent;

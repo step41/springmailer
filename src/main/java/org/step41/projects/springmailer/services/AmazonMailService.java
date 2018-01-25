@@ -11,7 +11,7 @@ import java.io.IOException;
 import static org.step41.projects.springmailer.config.Constants.Strings.*;
 
 @Service
-public class AmazonMailService {
+public class AmazonMailService implements MailServiceInterface {
 
     private Boolean sent;
 
@@ -39,7 +39,6 @@ public class AmazonMailService {
         } catch (Exception ex) {
             System.out.println(MSG_MAIL_SEND_FAIL + "Amazon SES. Error: " + ex.getMessage());
             sent = false;
-            throw ex;
         }
         finally {
             return sent;
